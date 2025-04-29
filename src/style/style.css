@@ -1,0 +1,78 @@
+/* ========== CORES DO SITE ========== */
+:root{
+    --color-primary: #0028d8;
+    --color-secondary: #001fac;
+    --color-txt: #FFFFFF;
+    --color-bg: #000000;
+    --color-footer-bg: rgba(44, 44, 44, 0.4);
+    --color-shadowimg: rgba(255, 255, 255, 0.3);
+}
+
+/* ========== RESET & BASE ========== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--color-bg);
+    color: var(--color-txt);
+    font-family: "Exo 2", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ========== HEADER ========== */
+header{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.profile-pic{
+    width: 150px;
+    height: 150px;
+    border: 2px solid var(--color-primary);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--color-shadowimg);
+    margin-bottom: 1rem;
+}
+
+/* ========== LINKS ========== */
+.link-container{
+    text-align: center;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+.link-item{
+    display: block;
+    width: 31.25rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    background: var(--color-primary);
+    color: var(--color-txt);
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+.link-item:hover{
+    background: var(--color-secondary);
+}
+
+/* ========== FOOTER ========== */
+footer{
+    text-align: center;
+    padding: 1.25rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: var(--color-footer-bg);
+    backdrop-filter: blur(15px);
+}
+footer p span{
+    font-weight: bold;
+}
